@@ -1,3 +1,5 @@
+import scrollDown from "@static/scroll-down.png";
+
 export function Footer() {
   return (
     <footer id="footer" className="bg-white text-sm py-8 w-full text-[rgb(14,46,71)]">
@@ -10,7 +12,7 @@ export function Footer() {
         {/* Scroll To Top Icon */}
         <a href="#" className="hover:opacity-80 transition bg-[rgb(14,46,71)] z-1">
           <img
-            src="/scroll-down.png"
+            src={scrollDown}
             alt="Scroll to Top"
             className="w-10 h-10 object-contain rotate-180"
           />

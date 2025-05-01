@@ -1,3 +1,5 @@
+import clockTicker from "@static/clock-ticker.gif";
+
 export function HeroSection() {
   return (
     <section
@@ -46,7 +48,7 @@ export function HeroSection() {
         {/* GIF Image */}
         <div className="max-w-[280px] md:max-w-md md:w-full absolute top-[150px] md:top-[100px]">
           <img
-            src="/clock-ticker.gif"
+            src={clockTicker}
             alt="Coming Soon GIF"
             className="w-full h-auto object-cover"
           />

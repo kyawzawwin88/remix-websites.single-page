@@ -7,13 +7,15 @@ import { AboutUs } from "../molecules/AboutUs";
 import { SubscribeNewsletter } from "../molecules/SubscribeNewsletter";
 import { Footer } from "../organisms/Footer";
 
+import backgroundVideo from "@static/background.mp4";
+
 export function LandingPage() {
   return (
     <main className="relative min-h-screen text-white flex flex-col items-center justify-center bg-transparent h-full">
       {/* Background Video */}
       <div className="relative w-full h-full">
         <FullScreenBackgroundVideo
-          src="/background.mp4"
+          src={backgroundVideo}
         />
         <div className="absolute inset-0 bg-black/50" />
       </div>
