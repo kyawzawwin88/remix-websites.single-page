@@ -8,10 +8,13 @@ declare module "@remix-run/node" {
   }
 }
 
+const base = '/remix-websites.single-page/';
+
 export default defineConfig({
-  base: '/remix-websites.single-page/',
+  base: base,
   plugins: [
     remix({
+      basename: base,
       ssr: false,
       future: {
         v3_fetcherPersist: true,
